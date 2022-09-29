@@ -1,0 +1,41 @@
+/*Write a Java program to print numbers between 1 to 100 which are divisible by 3, 5 and by both
+both*/
+package Lab;
+
+public class HandsOn2 {
+
+		static void divisible(int N)
+	    {
+	    	System.out.print("Nos.divisible by 3 are: ");
+	    
+	    	for( int i = 1; i<N;i++)
+	    	{ 
+	    		if (i % 3==0) {
+	    			
+	    		System.out.print(" "+i);
+	    		}
+	    	}
+	    	
+	    	System.out.print("\n\nNos. divisible by 5 are: ");
+	    	for( int i = 1; i<N;i++)
+		    	{ 
+		    		if (i % 5==0) {
+		    			
+		    		System.out.print(" "+i);
+		    		}
+		    	}
+	    		
+	    	System.out.print("\n\nNOs. divisible by both(3 and 5) are: ");
+	        for (int i = 1; i < N; i++)
+	        {
+	           if (i % 3 == 0 && i % 5 == 0)
+	                System.out.print(i + " ");
+	        }
+	    } 
+		
+	    public static void main(String []args)
+	    {
+	        int N = 100;
+	        divisible(N);
+	    }
+}
