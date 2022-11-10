@@ -1,3 +1,10 @@
+
+/*Q. 2 
+
+Write a Java program to find sequences of lowercase letters joined with a underscore
+*/
+
+
 package Lab;
 
 import java.util.Scanner;
