@@ -24,7 +24,7 @@ public class Question3 {
 	  
 	  
 	  char arr[] = new char[str1.length()];
-	  char[] m = new char[300];
+	  char[] m = new char[256];
 	  for (int i = 0; i < str2.length(); i++)
 	   m[str2.charAt(i)]++;
 	  System.out.println("\nThe new string is: ");
