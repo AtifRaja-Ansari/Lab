@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:jpa="http://www.springframework.org/schema/data/jpa"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ https://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/data/jpa
+ https://www.springframework.org/schema/data/jpa/spring-jpa.xsd">
+ 
+  <bean id="D" class="com.demo.Entity.Dept">
+ <constructor-arg  value="BCA"/>
+  <constructor-arg  value="AIOM"/>
+
+ </bean>
+ 
+ <bean id="S" class="com.demo.Entity.Student">
+   <constructor-arg type="int" value="10"/>
+  <constructor-arg value="Avi"/>
+    <constructor-arg><ref bean="dept"/> </constructor-arg>
+  
+ </bean>
+ <bean id="M" class="com.Demo.Entity.MCQ">
+ <constructor-arg  value="10"/>
+  <constructor-arg  value="who is the prime minister of India"/>
+  <constructor-arg>  
+  <list>
+  <value>Narendra Modhi</value>
+  <value>Rahul Gandhi</value>
+  <value>Mukesh Ambani</value>
+ </list>
+</constructor-arg> 
+
+
+ </bean>
+ 
+ <bean id="E" class="com.Demo.Entity.Emp">
+   <constructor-arg type="double" value="80000"/>
+  <constructor-arg value="Atif"/>
+ </bean>
+ 
+ </beans>
